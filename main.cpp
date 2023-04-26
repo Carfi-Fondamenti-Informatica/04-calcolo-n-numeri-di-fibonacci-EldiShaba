@@ -1,17 +1,15 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-    int numero1 = 0,numero2 = 1,prossimo_numero = 0, n;
-    cin >> n;
-    cout << "Serie di fibonacci " << numero1 << ", " <<numero2 << ", ";
-    prossimo_numero = numero1 + numero2;
-
-    while(prossimo_numero <= n) {
-        cout << prossimo_numero << ", ";
-        numero1 = numero2;
-        numero2 = prossimo_numero;
-        prossimo_numero = numero1 + numero2;
-         }
+int main(){
+    int n1=0,n2=1,n3,i,number;
+    cout<<"numeri di elementi ";
+    cin>>number;
+    cout<<n1<<" "<<n2<<" ";
+    for(i=2;i<number;++i){
+        n3=n1+n2;
+        cout<<n3<<" ";
+        n1=n2;
+        n2=n3;
+    }
     return 0;
 }
