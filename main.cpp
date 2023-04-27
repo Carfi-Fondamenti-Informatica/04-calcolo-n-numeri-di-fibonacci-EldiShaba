@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 int main(){
@@ -7,8 +6,7 @@ int main(){
     cin>>numero;
     if(numero>2){
         cout<<n1<<endl;
-        cout<<n2<<endl;
-        for(i=2;i<numero;++i){
+        for(i=0;i<numero-1;++i){
             n3=n1+n2;
             cout<<n3<<endl;
             n1=n2;
