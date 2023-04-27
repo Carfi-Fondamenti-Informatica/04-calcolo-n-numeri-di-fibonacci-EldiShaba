@@ -5,8 +5,7 @@ int main(){
     cout<<"numeri di elementi ";
     cin>>numero;
     if(numero>2){
-        cout<<n1<<endl;
-        for(i=0;i<numero-1;++i){
+        for(i=0;i<numero;++i){
             n3=n1+n2;
             cout<<n3<<endl;
             n1=n2;
